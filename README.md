@@ -1,6 +1,6 @@
 # Insider
 
-Project with simple star manager framework
+Project with simple star manager (inner framework)
 
 ## Framework Usage
 
