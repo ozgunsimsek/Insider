@@ -8,26 +8,69 @@
 
 /* Begin PBXBuildFile section */
 		139EF3FF289EAE750025AE8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EF3FE289EAE750025AE8F /* AppDelegate.swift */; };
-		139EF401289EAE750025AE8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EF400289EAE750025AE8F /* SceneDelegate.swift */; };
 		139EF403289EAE750025AE8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EF402289EAE750025AE8F /* ViewController.swift */; };
 		139EF406289EAE750025AE8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139EF404289EAE750025AE8F /* Main.storyboard */; };
 		139EF408289EAE750025AE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139EF407289EAE750025AE8F /* Assets.xcassets */; };
 		139EF40B289EAE750025AE8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139EF409289EAE750025AE8F /* LaunchScreen.storyboard */; };
+		139EF41A289EAFE50025AE8F /* Star.h in Headers */ = {isa = PBXBuildFile; fileRef = 139EF419289EAFE50025AE8F /* Star.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		139EF41D289EAFE50025AE8F /* Star.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139EF417289EAFE50025AE8F /* Star.framework */; };
+		139EF41E289EAFE50025AE8F /* Star.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 139EF417289EAFE50025AE8F /* Star.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		139EF424289EB5040025AE8F /* StarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EF423289EB5040025AE8F /* StarModel.swift */; };
+		139EF426289EE1F10025AE8F /* StarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EF425289EE1F10025AE8F /* StarManager.swift */; };
+		139EF428289EE2A30025AE8F /* StarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EF427289EE2A30025AE8F /* StarBuilder.swift */; };
+		139EF42A289EEC5E0025AE8F /* UIApplication+VisibleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139EF429289EEC5E0025AE8F /* UIApplication+VisibleController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		139EF41B289EAFE50025AE8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 139EF3F3289EAE750025AE8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 139EF416289EAFE50025AE8F;
+			remoteInfo = Star;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		139EF422289EAFE50025AE8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				139EF41E289EAFE50025AE8F /* Star.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		139EF3FB289EAE750025AE8F /* Insider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139EF3FE289EAE750025AE8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		139EF400289EAE750025AE8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		139EF402289EAE750025AE8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		139EF405289EAE750025AE8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		139EF407289EAE750025AE8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		139EF40A289EAE750025AE8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		139EF40C289EAE750025AE8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139EF417289EAFE50025AE8F /* Star.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Star.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		139EF419289EAFE50025AE8F /* Star.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Star.h; sourceTree = "<group>"; };
+		139EF423289EB5040025AE8F /* StarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarModel.swift; sourceTree = "<group>"; };
+		139EF425289EE1F10025AE8F /* StarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarManager.swift; sourceTree = "<group>"; };
+		139EF427289EE2A30025AE8F /* StarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarBuilder.swift; sourceTree = "<group>"; };
+		139EF429289EEC5E0025AE8F /* UIApplication+VisibleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+VisibleController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		139EF3F8289EAE750025AE8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139EF41D289EAFE50025AE8F /* Star.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		139EF414289EAFE50025AE8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				139EF3FD289EAE750025AE8F /* Insider */,
+				139EF418289EAFE50025AE8F /* Star */,
 				139EF3FC289EAE750025AE8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				139EF3FB289EAE750025AE8F /* Insider.app */,
+				139EF417289EAFE50025AE8F /* Star.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				139EF3FE289EAE750025AE8F /* AppDelegate.swift */,
-				139EF400289EAE750025AE8F /* SceneDelegate.swift */,
 				139EF402289EAE750025AE8F /* ViewController.swift */,
 				139EF404289EAE750025AE8F /* Main.storyboard */,
 				139EF407289EAE750025AE8F /* Assets.xcassets */,
@@ -67,7 +111,30 @@
 			path = Insider;
 			sourceTree = "<group>";
 		};
+		139EF418289EAFE50025AE8F /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				139EF419289EAFE50025AE8F /* Star.h */,
+				139EF423289EB5040025AE8F /* StarModel.swift */,
+				139EF427289EE2A30025AE8F /* StarBuilder.swift */,
+				139EF425289EE1F10025AE8F /* StarManager.swift */,
+				139EF429289EEC5E0025AE8F /* UIApplication+VisibleController.swift */,
+			);
+			path = Star;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		139EF412289EAFE50025AE8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139EF41A289EAFE50025AE8F /* Star.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		139EF3FA289EAE750025AE8F /* Insider */ = {
@@ -77,15 +144,35 @@
 				139EF3F7289EAE750025AE8F /* Sources */,
 				139EF3F8289EAE750025AE8F /* Frameworks */,
 				139EF3F9289EAE750025AE8F /* Resources */,
+				139EF422289EAFE50025AE8F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				139EF41C289EAFE50025AE8F /* PBXTargetDependency */,
 			);
 			name = Insider;
 			productName = Insider;
 			productReference = 139EF3FB289EAE750025AE8F /* Insider.app */;
 			productType = "com.apple.product-type.application";
+		};
+		139EF416289EAFE50025AE8F /* Star */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 139EF41F289EAFE50025AE8F /* Build configuration list for PBXNativeTarget "Star" */;
+			buildPhases = (
+				139EF412289EAFE50025AE8F /* Headers */,
+				139EF413289EAFE50025AE8F /* Sources */,
+				139EF414289EAFE50025AE8F /* Frameworks */,
+				139EF415289EAFE50025AE8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Star;
+			productName = Star;
+			productReference = 139EF417289EAFE50025AE8F /* Star.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +186,10 @@
 				TargetAttributes = {
 					139EF3FA289EAE750025AE8F = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					139EF416289EAFE50025AE8F = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -116,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				139EF3FA289EAE750025AE8F /* Insider */,
+				139EF416289EAFE50025AE8F /* Star */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +223,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		139EF415289EAFE50025AE8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,11 +239,29 @@
 			files = (
 				139EF403289EAE750025AE8F /* ViewController.swift in Sources */,
 				139EF3FF289EAE750025AE8F /* AppDelegate.swift in Sources */,
-				139EF401289EAE750025AE8F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		139EF413289EAFE50025AE8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				139EF424289EB5040025AE8F /* StarModel.swift in Sources */,
+				139EF426289EE1F10025AE8F /* StarManager.swift in Sources */,
+				139EF428289EE2A30025AE8F /* StarBuilder.swift in Sources */,
+				139EF42A289EEC5E0025AE8F /* UIApplication+VisibleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		139EF41C289EAFE50025AE8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 139EF416289EAFE50025AE8F /* Star */;
+			targetProxy = 139EF41B289EAFE50025AE8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		139EF404289EAE750025AE8F /* Main.storyboard */ = {
@@ -283,6 +400,7 @@
 		139EF410289EAE750025AE8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +428,7 @@
 		139EF411289EAE750025AE8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +453,69 @@
 			};
 			name = Release;
 		};
+		139EF420289EAFE50025AE8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgunsimsek.Star;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		139EF421289EAFE50025AE8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozgunsimsek.Star;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +533,15 @@
 			buildConfigurations = (
 				139EF410289EAE750025AE8F /* Debug */,
 				139EF411289EAE750025AE8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		139EF41F289EAFE50025AE8F /* Build configuration list for PBXNativeTarget "Star" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				139EF420289EAFE50025AE8F /* Debug */,
+				139EF421289EAFE50025AE8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
